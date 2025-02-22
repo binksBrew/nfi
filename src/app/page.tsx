@@ -8,6 +8,7 @@ import Gallery from "./components/Gallery";
 import QualityStandards from "./components/QualityStandards";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Impact from "./components/Impact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <QualityStandards />
       <WhyChooseUs />
       <Impact />
+      <Footer />
     </div>
   );
 }

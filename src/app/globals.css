@@ -28,13 +28,13 @@ body {
 @tailwind utilities;
 
 :root {
-  --background: url('/heroGrapes.png'); /* ✅ Set the image as background */
+  --background: #fff; /* ✅ Set the image as background */
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: url('/heroGrapes.png'); /* ✅ Ensure it applies in dark mode */
+    --background: #fff; /* ✅ Ensure it applies in dark mode */
     --foreground: #ededed;
   }
 }

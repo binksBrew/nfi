@@ -1,4 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const grapeDetails = [
   {
@@ -22,19 +27,27 @@ const grapeDetails = [
 ];
 
 const GrapesDetail = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true }); // ✅ Initialize AOS
+  }, []);
+
   return (
     <section className="py-16 px-6 bg-white">
-      {/* Section Title */}
-      <h2 className="text-4xl font-semibold text-center mb-10 text-blue-900">
+      {/* ✅ Section Title */}
+      <h2 className="text-4xl font-semibold text-center mb-10 text-blue-900" data-aos="fade-down">
         Grape Characteristics
       </h2>
 
-      {/* Feature Grid */}
+      {/* ✅ Feature Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center">
         {grapeDetails.map((item) => (
-          <div key={item.id} className="flex flex-col items-center">
-            {/* Feature Image */}
-            <div className="relative w-80 h-56 mb-4 overflow-hidden rounded-lg">
+          <div
+            key={item.id}
+            className="flex flex-col items-center"
+            data-aos="fade-up"
+          >
+            {/* ✅ Feature Image with Subtle Hover Effect */}
+            <div className="relative w-80 h-56 mb-4 overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105">
               <Image
                 src={item.image}
                 alt={item.title}
@@ -44,7 +57,7 @@ const GrapesDetail = () => {
               />
             </div>
 
-            {/* Title & Description */}
+            {/* ✅ Title & Description */}
             <h3 className="text-xl font-semibold text-gray-900">{item.title}</h3>
             <p className="text-gray-700 max-w-xs">{item.description}</p>
           </div>
