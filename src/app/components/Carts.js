@@ -36,7 +36,7 @@ const Cart = () => {
     <section className="py-12 px-6 bg-gray-100 flex justify-center">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full" data-aos="fade-in">
         {/* ✅ Section Title */}
-        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">
+        <h2 className="text-5xl font-bold text-blue-900 mb-6 text-center">
           Flame Seedless Grapes
         </h2>
 

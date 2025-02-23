@@ -34,7 +34,7 @@ const GrapesDetail = () => {
   return (
     <section className="py-16 px-6 bg-white">
       {/* ✅ Section Title */}
-      <h2 className="text-4xl font-semibold text-center mb-10 text-blue-900" data-aos="fade-down">
+      <h2 className="text-5xl font-semibold text-center mb-10 text-blue-900" data-aos="fade-down">
         Grape Characteristics
       </h2>
 

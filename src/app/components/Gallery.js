@@ -86,7 +86,7 @@ const Gallery = () => {
     <section className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* ✅ Section Title */}
-        <h2 className="text-3xl font-semibold text-gray-900 text-left mb-8" data-aos="fade-down">
+        <h2 className="text-4xl font-semibold text-gray-900 text-left mb-8" data-aos="fade-down">
           From Farm to Your Doorstep: A Fresh Grape Story
         </h2>
 
